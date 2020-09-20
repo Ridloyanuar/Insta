@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Beranda"/>
+    <item
+        android:id="@+id/nav_tambah"
+        android:icon="@drawable/ic_baseline_add_circle_outline_24"
+        android:title="Tambah "/>
+    <item
+        android:id="@+id/nav_akun"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Akun"
+        />
+</menu>

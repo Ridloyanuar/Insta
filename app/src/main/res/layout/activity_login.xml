@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_emaill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="Alamat Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <EditText
+            android:id="@+id/editText_passLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editText_emaill"
+            app:layout_constraintStart_toStartOf="@+id/editText_emaill"
+            app:layout_constraintTop_toBottomOf="@+id/editText_emaill" />
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_button"
+            android:text="Masuk"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/editText_passLogin"
+            app:layout_constraintStart_toStartOf="@+id/editText_passLogin"
+            app:layout_constraintTop_toBottomOf="@+id/txt_lupaPassword" />
+
+        <TextView
+            android:id="@+id/txt_lupaPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lupa Kata Sandi?"
+            android:textColor="#F88017"
+            app:layout_constraintStart_toStartOf="@+id/editText_passLogin"
+            app:layout_constraintTop_toBottomOf="@+id/editText_passLogin" />
+
+        <TextView
+            android:id="@+id/txt_buatAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Buat Akun"
+            app:layout_constraintEnd_toEndOf="@+id/editText_passLogin"
+            app:layout_constraintTop_toBottomOf="@+id/editText_passLogin" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
